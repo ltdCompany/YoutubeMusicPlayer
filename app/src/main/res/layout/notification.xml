@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="128dp">
+
+
+    <Button
+        android:id="@+id/closenotif"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/ic_close_black_24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@id/closenotif">
+
+
+        <ImageView
+            android:id="@+id/albumcovernotif"
+            android:layout_width="128dp"
+            android:layout_height="128dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/songname"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="9dp"
+                    android:text="NOTIFICATION"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/prevsongnotif"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/exo_controls_rewind"
+                    android:layout_gravity="bottom"/>
+                <ImageView
+                    android:id="@+id/playpausenotif"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/exo_controls_play"
+                    android:layout_gravity="bottom"/>
+                <ImageView
+                    android:id="@+id/nextsongnotif"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/exo_controls_fastforward"
+                    android:layout_gravity="bottom"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

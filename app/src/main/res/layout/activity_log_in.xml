@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:cursorVisible="false"
+            android:background="@drawable/login_signup_text_box"
+            android:hint="Email"/>
+
+        <EditText
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_signup_text_box"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_below="@id/email"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/loginbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/login_button_selector"
+            android:text="Log in"
+            android:layout_below="@id/password"
+            android:onClick="onClick"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/logingoogletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Or login with Google)"
+            android:layout_below="@id/loginbutton"
+            android:layout_centerHorizontal="true"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googleloginbutton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/logingoogletext"/>
+
+        <LinearLayout
+            android:id="@+id/signuplayout"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/googleloginbutton"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/noaccounttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?" />
+
+            <TextView
+                android:id="@+id/signuptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Sign Up Here!"
+                android:onClick="onClick"
+                android:textColor="#2196F3" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/signuplayout"
+            android:id="@+id/forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password? Click here"
+            android:onClick="onClick"
+            android:textColor="#2196F3"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_signup_text_box"
+            android:hint="Enter full name"/>
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/username"
+            android:background="@drawable/login_signup_text_box"
+            android:hint="Enter valid email id"/>
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_signup_text_box"
+            android:inputType="textPassword"
+            android:hint="Enter password"
+            android:layout_below="@id/email"/>
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_signup_text_box"
+            android:inputType="textPassword"
+            android:hint="Enter password again"
+            android:layout_below="@id/password"/>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/signupbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Sign Up"
+            android:background="@drawable/login_button_selector"
+            android:layout_below="@id/confirmpassword"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

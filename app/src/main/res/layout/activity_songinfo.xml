@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sai.musicplayer.songinfo">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#4DB6AC"
+        app:layout_constraintBottom_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/songinfo"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="#4DB6AC"/>
+
+        <ImageView
+            android:id="@+id/albumcover"
+            android:paddingTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <ListView
+            android:id="@+id/albumlist"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+
+        </ListView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+
+            <TextView
+                android:id="@+id/nowplaying"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="#4DB6AC"
+                android:layout_toLeftOf="@id/prevsong"
+                android:layout_below="@id/addqueue"
+                android:onClick="btoq"/>
+
+            <Button
+                android:id="@+id/addqueue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+Queue"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:onClick="addtoq"
+                android:background="@drawable/songinfo_buttonclicks"/>
+
+            <Button
+                android:id="@+id/toq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/addqueue"
+                android:layout_above="@id/nowplaying"
+                android:text="TO QUEUE"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="3dp"
+                android:background="@drawable/songinfo_buttonclicks"
+                android:onClick="btoq"/>
+
+            <Button
+                android:id="@+id/albumtoq"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:layout_toRightOf="@id/addqueue"
+                android:background="@drawable/songinfo_buttonclicks"
+                android:text="Add ALbum\nto queue"
+                android:onClick="albumtoq"/>
+
+            <Button
+                android:id="@+id/nextsong"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/addqueue"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_skip_next_black_24dp"
+                android:backgroundTint="#ffffff"
+                android:onClick="mediacontrol"/>
+
+            <Button
+                android:id="@+id/playpause"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/addqueue"
+                android:layout_toLeftOf="@id/nextsong"
+                android:background="@drawable/ic_play_arrow_black_24dp"
+                android:backgroundTint="#ffffff"
+                android:onClick="mediacontrol"/>
+
+
+            <Button
+                android:id="@+id/prevsong"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/addqueue"
+                android:layout_toLeftOf="@id/playpause"
+                android:background="@drawable/ic_skip_previous_black_24dp"
+                android:backgroundTint="#ffffff"
+                android:onClick="mediacontrol"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

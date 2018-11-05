@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".AboutPage">
+
+    <RelativeLayout
+        android:id="@+id/textlayout"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/whatsup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WHAT'S UP"
+            android:layout_centerHorizontal="true"
+            android:textSize="60sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name?"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/whatsup"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:layout_centerHorizontal="true"
+            android:text="Hope you like the app! Any issues, comments, suggestions or glitches that you'd like to report?\nContact the developer @"
+            android:layout_below="@id/username"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:text="sainath17136@cse.ssn.edu.in"
+            android:textSize="20sp"
+            android:layout_below="@id/comment"
+            android:layout_centerHorizontal="true"
+            android:textColor="#03A9F4"
+            android:onClick="sendemail" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="version"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        />
+
+</RelativeLayout>

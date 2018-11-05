@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "7999973452",
+    "firebase_url": "https://musicplayer-3d570.firebaseio.com",
+    "project_id": "musicplayer-3d570",
+    "storage_bucket": "musicplayer-3d570.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7999973452:android:69c8ddf3103ca3a8",
+        "android_client_info": {
+          "package_name": "com.example.sai.musicplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7999973452-6199dccl1od8tkoab9np44eh6h27mptn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9oy7eoP7Xe5ptQ8vvS2etEcpSkKwYrbE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
